@@ -1,6 +1,6 @@
 # KuanAI free agent skills
 
-20 ready-to-use **Agent Skills** (`SKILL.md`) for Claude Code, Claude.ai and any agent that reads the Agent Skills format, plus 30 copy-paste prompts. Free, MIT licensed, no email.
+25 ready-to-use **Agent Skills** (`SKILL.md`) for Claude Code, Claude.ai and any agent that reads the Agent Skills format, plus 35 copy-paste prompts. Free, MIT licensed, no email.
 
 Browse them with previews and one-click copy at **[kuan-ai.com/skills](https://kuan-ai.com/skills?utm_source=github&utm_medium=readme&utm_campaign=skills-repo)**.
 
@@ -45,6 +45,11 @@ Or clone this repo and copy any folder from `skills/` into your skills folder. R
 | [Spreadsheet / CSV analyst](skills/data-analyst/SKILL.md) | Research | Analyzes a CSV or spreadsheet with code, checks data quality and reconciles totals, and answers with verified numbers, caveats and the findings that matter. | [page](https://kuan-ai.com/skills/data-analyst?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
 | [Product spec (PRD)](skills/product-spec/SKILL.md) | Business | Turns a feature idea into a one-page spec with problem, scope, acceptance criteria, edge cases and a measurable goal, marking every assumption. | [page](https://kuan-ai.com/skills/product-spec?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
 | [Customer support reply](skills/support-reply/SKILL.md) | Business | Drafts support replies that fix the issue within your policies, never claim actions not taken, and flag tickets that need a human or escalation. | [page](https://kuan-ai.com/skills/support-reply?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Safe database migrations](skills/migration-safety/SKILL.md) | Coding | Writes and reviews schema migrations that run without downtime: expand/contract steps, lock checks, batched backfills, deploy order and a rollback plan. | [page](https://kuan-ai.com/skills/migration-safety?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Fix a failing CI build](skills/ci-failure-fix/SKILL.md) | Coding | Diagnoses a red CI pipeline from the real logs, separates flaky tests from real failures, reproduces locally and fixes the cause without skipping checks. | [page](https://kuan-ai.com/skills/ci-failure-fix?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Upgrade a dependency](skills/dependency-upgrade/SKILL.md) | Coding | Upgrades a library or framework major version step by step: reads the changelog and migration guide, fixes removed APIs and keeps the tests green. | [page](https://kuan-ai.com/skills/dependency-upgrade?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Incident postmortem](skills/incident-postmortem/SKILL.md) | Business | Turns incident logs, chat and notes into a blameless postmortem with a verified timeline, root cause, contributing factors and owned action items. | [page](https://kuan-ai.com/skills/incident-postmortem?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Evaluate a prompt or skill](skills/eval-prompt/SKILL.md) | Research | Builds a small test set with pass/fail criteria for a prompt, skill or agent, runs it before and after a change and reports what really improved. | [page](https://kuan-ai.com/skills/eval-prompt?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
 
 ## Prompts
 
@@ -80,6 +85,11 @@ Or clone this repo and copy any folder from `skills/` into your skills folder. R
 | [Job description people finish reading](prompts/job-description.md) | Business | A job post about the real work, first-90-day projects and honest requirements, with salary shown and no clichés or invented perks. | [page](https://kuan-ai.com/skills/job-description?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
 | [Plan my week](prompts/weekly-plan.md) | Productivity | Turns a messy task list into a realistic week: priorities, time estimates with buffer, focus blocks and what to drop. | [page](https://kuan-ai.com/skills/weekly-plan?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
 | [Decision matrix](prompts/decision-matrix.md) | Productivity | Compares options on weighted criteria, tests whether the winner survives other weights, and runs a pre-mortem before you commit. | [page](https://kuan-ai.com/skills/decision-matrix?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Pre-mortem for a plan](prompts/pre-mortem.md) | Business | Imagines your plan has already failed and lists the most likely causes by probability and impact, each with an early warning sign and a mitigation. | [page](https://kuan-ai.com/skills/pre-mortem?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Feedback on a draft](prompts/feedback-on-draft.md) | Writing | Critiques a draft against its goal and reader: the 3 problems that matter most, in order, with the exact sentence and a fix, without rewriting it all. | [page](https://kuan-ai.com/skills/feedback-on-draft?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Decision memo](prompts/decision-memo.md) | Business | Turns messy notes into a one-page decision memo: context, options, weighted criteria, recommendation, risks and what would change the decision. | [page](https://kuan-ai.com/skills/decision-memo?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Critique an existing landing page](prompts/landing-page-critique.md) | Marketing | Reviews the copy of a live landing page or ad and returns the 5 problems that cost the most conversions, ranked, each with a rewrite. | [page](https://kuan-ai.com/skills/landing-page-critique?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
+| [Customer interview script (Mom Test)](prompts/customer-interview.md) | Research | Builds a customer interview guide in the spirit of The Mom Test: questions about past behaviour, not opinions, plus the signals of real commitment. | [page](https://kuan-ai.com/skills/customer-interview?utm_source=github&utm_medium=readme&utm_campaign=skills-repo) |
 
 ## More from KuanAI
 
