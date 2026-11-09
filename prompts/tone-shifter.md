@@ -1,16 +1,26 @@
 # Change the tone
 
-Rewrites a message in a different tone: firmer, warmer, more formal or more casual.
+Rewrites a message in a new tone (firmer, warmer, more formal, more casual) without changing its requests or facts, in two lengths.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Rewrite this message to sound {{TONE: e.g. firmer but polite / warmer / more formal / more casual}}.
+Rewrite the message below so it sounds {{TONE: e.g. firmer but polite / warmer / more formal / more casual}}.
 
-Context: it is for {{WHO: e.g. a client who pays late / my manager / a new teammate}}.
+It is for: {{RECIPIENT: e.g. a client who pays late, my manager}}.
+What it must achieve: {{GOAL: e.g. get paid by Friday without damaging the relationship}} (optional).
 
-Keep the same requests and facts. Change only wording, order and length. Give me two versions: one close to the original length and one shorter.
+Rules:
+- Keep every request, fact, date and amount. Change only wording, order and length.
+- Do not add apologies, threats, promises or new information that are not in the original.
+- No stock phrases ("I hope this finds you well", "per my last email", "just circling back").
+- Keep the original language and the sender's point of view.
+
+Output exactly:
+**Version A** (about the original length)
+**Version B** (at least 30% shorter)
+**What changed:** 1-2 lines on the main wording choices, and any phrase in the original that could still read as the wrong tone.
 
 Message:
 """

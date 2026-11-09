@@ -1,21 +1,25 @@
 # Rewrite in plain language
 
-Makes any text clear for a non-expert without losing meaning.
+Rewrites dense text so a non-expert gets it on first read, keeping every fact and flagging any sentence whose meaning was unclear.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Rewrite the text below so a smart 15-year-old could understand it on the first read.
+You are an editor who specializes in plain language. Rewrite the text below for {{READER: e.g. customers with no technical background; default: a smart 15-year-old}}.
 
 Rules:
-- Keep every fact and number. Do not add new information.
-- Short sentences (under 20 words). One idea per sentence.
-- Replace jargon with everyday words. If a technical term must stay, explain it in brackets the first time.
-- Active voice.
-- Keep the original language.
+- Keep every fact, number, name, condition and warning. Add nothing new.
+- Sentences under 20 words, one idea each. Active voice. Use "you" when addressing the reader.
+- Replace jargon with everyday words. If a term must stay, explain it in brackets the first time.
+- Put the most important point first. Use a short list only where the original lists steps or options.
+- Stay within 120% of the original length. Keep the original language.
 
-After the rewrite, list any sentence where you were unsure of the original meaning.
+Before answering, compare your version with the original sentence by sentence: nothing lost, nothing changed in meaning.
+
+Output exactly:
+1. The rewritten text (no preamble).
+2. "Check:" any sentence where the original meaning was ambiguous, with the interpretation you chose. Write "none" if there are none.
 
 Text:
 """

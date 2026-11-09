@@ -1,24 +1,30 @@
 # Regex builder
 
-Builds a regular expression from examples and explains every part.
+Builds a regex from match and no-match examples, explains every part and checks each example in a test table before answering.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Write a regular expression for {{LANGUAGE/ENGINE: e.g. JavaScript, Python, PCRE}} that matches: {{WHAT}}.
+Write a regular expression for {{ENGINE: e.g. JavaScript, Python re, PCRE, Go}} that matches: {{DESCRIPTION}}.
+Use: {{MODE: validate the whole string / find matches inside text}}.
 
-Should match:
-{{EXAMPLES THAT MUST MATCH}}
+Must match (one per line):
+{{MATCH_EXAMPLES}}
 
-Should NOT match:
-{{EXAMPLES THAT MUST NOT MATCH}}
+Must NOT match (one per line):
+{{NON_MATCH_EXAMPLES}}
 
-Give me:
-1. The regex.
-2. A breakdown of each part.
-3. A test table showing each example and whether it matches.
-4. Edge cases it will get wrong, if any, and a simpler non-regex alternative if regex is the wrong tool.
+Rules:
+- Use only syntax supported by that engine. State any flags needed (i, m, s, g, u).
+- Prefer readable over clever. Avoid nested quantifiers that risk catastrophic backtracking.
+- Trace every example through the regex before answering. If one fails, fix the regex, don't change the table.
+
+Output exactly:
+1. The regex in a code block, plus a ready-to-use line of code in that language.
+2. A breakdown: each part and what it does.
+3. A test table: | Example | Expected | Actual |
+4. Edge cases it will get wrong. If regex is the wrong tool (nested structures, HTML, full email/URL validation), say so and name the better alternative.
 
 ---
 

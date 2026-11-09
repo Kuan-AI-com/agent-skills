@@ -1,20 +1,28 @@
 # Fact-check a text
 
-Lists every checkable claim in a text and rates how much to trust each one.
+Pulls every checkable claim out of a text, rates each with a reason and the source that would settle it, worst problems first.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Go through the text below and extract every factual claim that can be checked (numbers, dates, quotes, "studies show", cause-effect statements).
+Fact-check the text below.
 
-For each claim, give:
-- the claim, quoted
-- verdict: likely true / misleading / likely false / cannot verify
-- why, in one sentence
-- what source would confirm it
+1. Extract every checkable claim: numbers, dates, quotes, attributions, "studies show", cause-effect statements. Skip opinions.
+2. If you can browse the web, check each claim and cite the source. If you cannot, say so once at the top and judge from what you know.
 
-Be explicit about what you know vs. what you would need to look up. Do not mark something false just because you have not heard of it.
+Output a table with columns:
+| # | Claim (quoted) | Verdict | Confidence | Why (1 sentence) | Source that would settle it |
+
+Verdict: true / likely true / misleading / likely false / false / cannot verify.
+Confidence: high / medium / low.
+
+Rules:
+- Never invent a source, URL, study or quote. If you name a source, it must be real; otherwise describe the type (e.g. "national statistics office, 2023 census").
+- "Cannot verify" is better than a guess. Do not mark something false just because you have not heard of it.
+- "Misleading" = technically true but framed to give a wrong impression; say how.
+
+After the table: **Fix first**: the 3 claims that most damage the text's credibility, with a corrected wording for each.
 
 Text:
 """

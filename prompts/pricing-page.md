@@ -1,22 +1,29 @@
 # Pricing tiers
 
-Designs 2-3 pricing tiers with clear value jumps and the reasoning behind them.
+Designs 2-3 pricing tiers tied to a value metric, with margins from your real costs and cheap experiments to validate them.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Help me price {{PRODUCT}}.
+Help me price {{PRODUCT: what it does and for whom}}.
 
-Customers: {{SEGMENTS}}. Costs per customer: {{COSTS}}. Competitor prices: {{COMPETITORS}}. Current price, if any: {{PRICE}}.
+Customer segments: {{SEGMENTS}}
+Cost to serve one customer per month: {{COSTS}}
+Competitor prices (optional): {{COMPETITORS}}
+Current price and results, if any (optional): {{CURRENT PRICE}}
+Priority: {{GOAL: more customers / higher margin / move upmarket}}
 
-1. Recommend a pricing model (per seat, usage, flat, one-time) and why.
-2. Design 2-3 tiers: name, price, who it is for, what is included, and the one feature that makes people upgrade.
-3. Explain the value metric each price is tied to.
-4. Annual discount and free trial / free plan recommendation.
-5. 3 experiments to validate the price with real customers.
+1. Value metric: what the price should scale with (seats, usage, projects, flat) and why it matches the value customers get.
+2. 2-3 tiers as a table: name | price | for whom | what is included | the one feature or limit that makes people upgrade | margin per customer (from my costs).
+3. Annual discount and free trial / free plan: recommend one setup and say why.
+4. Risks: which tier could cannibalize another, and which segment might find it too expensive.
+5. 3 experiments to validate the price with real customers (what to test, how, what result changes the price).
 
-Show the margin per tier using my costs.
+Rules:
+- Use only my numbers. Do not invent market data, willingness to pay or conversion rates; where you assume something, write [assumption].
+- If an input is missing, say what you assumed and how it changes the answer.
+- No tricks like fake "most popular" badges or hidden fees.
 
 ---
 

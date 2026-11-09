@@ -1,21 +1,26 @@
 # 10 headlines, 5 angles
 
-Headline variants for an article, ad or page, using different angles to test.
+10 headlines across 5 testable angles, within your character limit, using only facts you supply: no invented numbers or clickbait.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Write 10 headlines for {{WHAT: article / ad / landing page}} about {{TOPIC}}, aimed at {{AUDIENCE}}.
+Write 10 headlines for {{FORMAT: article / ad / landing page / email subject}} about {{TOPIC}}, aimed at {{AUDIENCE}}.
+Facts I can back up: results, numbers, findings (optional): {{FACTS}}
+Max length: {{MAX CHARACTERS: e.g. 60}} characters.
 
-Use 5 angles, 2 headlines each:
-1. Specific result with a number
-2. Curiosity / surprising fact
+5 angles, 2 headlines each:
+1. Specific result (numbers only from FACTS; if none, a concrete outcome without a number)
+2. Curiosity: a gap the content actually answers
 3. Pain or mistake to avoid
 4. How-to
-5. Contrarian
+5. Contrarian: a common belief the content really challenges
 
-Under {{CHARACTERS: e.g. 60}} characters each. No clickbait that the content cannot deliver. Mark your top 2 and say why.
+Rules: every headline must be delivered by the content. No invented numbers, no "you won't believe", no ALL CAPS, no question if the answer is just "yes".
+
+Output: a table of # | angle | headline | character count. Count characters exactly and rewrite any headline over the limit.
+Then mark your top 2 and explain in one line each why they would win for this audience.
 
 ---
 

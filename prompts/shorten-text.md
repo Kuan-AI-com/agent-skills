@@ -1,19 +1,28 @@
-# Cut it in half
+# Shorten a text
 
-Shortens a text to a target length while keeping the point and the voice.
+Cuts a text to a word target while keeping the point, the key facts and the author's voice, then reports exactly what was removed.
 
 Replace the {{PLACEHOLDERS}} before sending.
 
 ---
 
-Shorten the text below to at most {{NUMBER}} words.
+Shorten the text below to at most {{MAX_WORDS: e.g. 150; default: half the original}} words.
 
-- Keep the main point, the key numbers and the call to action.
-- Cut repetition, throat-clearing intros, hedges ("I think", "basically") and adjectives that add nothing.
-- Keep the author's voice and language.
-- Do not summarize in the third person: it must still read as the original text.
+Keep, in this order of priority:
+1. The main point and the call to action.
+2. Numbers, names, dates, deadlines and conditions.
+3. The author's voice, person ("I", "we") and language.
 
-Then tell me in one line what you cut.
+Cut first: repetition, warm-up intros, hedges ("I think", "basically", "just"), filler adjectives, and examples that repeat a point already made.
+
+Do not summarize in the third person: it must still read as the original text, ready to send. Do not add new words or ideas.
+
+Count the words before answering. If you are over the limit, cut again.
+
+Output exactly:
+1. The shortened text (no preamble).
+2. "Word count: X (was Y)".
+3. "Cut:" one line listing what you removed. Flag anything important you had to drop to hit the limit.
 
 Text:
 """
