@@ -1,0 +1,335 @@
+{
+  "name": "kuan",
+  "description": "KuanAI free agent skills: 25 SKILL.md skills for coding, writing, research and business. Install one at a time: /plugin install <skill>@kuan",
+  "owner": {
+    "name": "KuanAI",
+    "url": "https://kuan-ai.com"
+  },
+  "plugins": [
+    {
+      "name": "code-review",
+      "displayName": "Code review",
+      "source": "./skills/code-review",
+      "description": "Reviews a diff for bugs it has verified in the code, ranks them by severity and gives a failing scenario and minimal fix for each.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/code-review",
+      "license": "MIT"
+    },
+    {
+      "name": "commit-message",
+      "displayName": "Commit messages",
+      "source": "./skills/commit-message",
+      "description": "Writes a commit message that matches the repo's conventions and explains why, then commits safely without skipping hooks or staging secrets.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/commit-message",
+      "license": "MIT"
+    },
+    {
+      "name": "pr-description",
+      "displayName": "Pull request description",
+      "source": "./skills/pr-description",
+      "description": "Writes a PR title and description from the real diff, filling the repo's template, with test steps you actually ran and risks called out.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/pr-description",
+      "license": "MIT"
+    },
+    {
+      "name": "write-tests",
+      "displayName": "Write unit tests",
+      "source": "./skills/write-tests",
+      "description": "Writes tests in the project's own framework, proves each one fails when the behavior breaks, and reports bugs instead of encoding them.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/write-tests",
+      "license": "MIT"
+    },
+    {
+      "name": "debug-detective",
+      "displayName": "Systematic debugging",
+      "source": "./skills/debug-detective",
+      "description": "Finds the root cause of a bug by reproducing it, narrowing with evidence and bisecting, then fixes the cause with a regression test.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/debug-detective",
+      "license": "MIT"
+    },
+    {
+      "name": "refactor-safely",
+      "displayName": "Safe refactoring",
+      "source": "./skills/refactor-safely",
+      "description": "Restructures code in small verified steps that keep tests, types and public behavior intact, and flags any change that is not a pure refactor.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/refactor-safely",
+      "license": "MIT"
+    },
+    {
+      "name": "readme-writer",
+      "displayName": "README writer",
+      "source": "./skills/readme-writer",
+      "description": "Writes or updates a README with commands verified against the repo, real env vars and setup steps that get a newcomer running fast.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/readme-writer",
+      "license": "MIT"
+    },
+    {
+      "name": "sql-helper",
+      "displayName": "SQL helper",
+      "source": "./skills/sql-helper",
+      "description": "Writes, checks and speeds up SQL against your real schema, catching NULL and join fan-out bugs and guarding every write with a preview and transaction.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/sql-helper",
+      "license": "MIT"
+    },
+    {
+      "name": "api-docs",
+      "displayName": "API documentation",
+      "source": "./skills/api-docs",
+      "description": "Documents HTTP endpoints by tracing routes, middleware and validators in the code, so params, auth and error codes match what the server really does.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/api-docs",
+      "license": "MIT"
+    },
+    {
+      "name": "dockerize",
+      "displayName": "Dockerize an app",
+      "source": "./skills/dockerize",
+      "description": "Adds a Dockerfile, .dockerignore and compose file matched to your stack, then builds and runs the container to prove it starts and responds.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/dockerize",
+      "license": "MIT"
+    },
+    {
+      "name": "changelog",
+      "displayName": "Changelog from commits",
+      "source": "./skills/changelog",
+      "description": "Turns a git range into user-facing release notes with breaking changes and migration steps first, each item traceable to its commit or PR.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/changelog",
+      "license": "MIT"
+    },
+    {
+      "name": "security-check",
+      "displayName": "Security check",
+      "source": "./skills/security-check",
+      "description": "Finds exploitable security bugs in a repo or diff by tracing user input to dangerous sinks, ranked by real risk with file:line and a fix.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/security-check",
+      "license": "MIT"
+    },
+    {
+      "name": "meeting-notes",
+      "displayName": "Meeting notes",
+      "source": "./skills/meeting-notes",
+      "description": "Turns a transcript into decisions, action items with owner and date, and open questions, without inventing owners, dates or agreements.",
+      "category": "productivity",
+      "keywords": [
+        "agent-skill",
+        "productivity"
+      ],
+      "homepage": "https://kuan-ai.com/skills/meeting-notes",
+      "license": "MIT"
+    },
+    {
+      "name": "email-replier",
+      "displayName": "Email replies",
+      "source": "./skills/email-replier",
+      "description": "Drafts email replies that answer every question in order, never commit you to anything you did not approve, and mark missing facts as placeholders.",
+      "category": "writing",
+      "keywords": [
+        "agent-skill",
+        "writing"
+      ],
+      "homepage": "https://kuan-ai.com/skills/email-replier",
+      "license": "MIT"
+    },
+    {
+      "name": "seo-article",
+      "displayName": "SEO article writer",
+      "source": "./skills/seo-article",
+      "description": "Writes a search-intent-matched article that answers the query first, adds original substance, and never invents statistics, sources or links.",
+      "category": "marketing",
+      "keywords": [
+        "agent-skill",
+        "marketing"
+      ],
+      "homepage": "https://kuan-ai.com/skills/seo-article",
+      "license": "MIT"
+    },
+    {
+      "name": "research-brief",
+      "displayName": "Research brief",
+      "source": "./skills/research-brief",
+      "description": "Researches a question with primary sources, a clear stop rule and exact citations, and returns a short brief that says what is known, disputed and unknown.",
+      "category": "research",
+      "keywords": [
+        "agent-skill",
+        "research"
+      ],
+      "homepage": "https://kuan-ai.com/skills/research-brief",
+      "license": "MIT"
+    },
+    {
+      "name": "competitor-analysis",
+      "displayName": "Competitor analysis",
+      "source": "./skills/competitor-analysis",
+      "description": "Compares competitors on audience, price, features and real customer complaints, with a source and date for every cell, and finds the gap you can own.",
+      "category": "business",
+      "keywords": [
+        "agent-skill",
+        "business"
+      ],
+      "homepage": "https://kuan-ai.com/skills/competitor-analysis",
+      "license": "MIT"
+    },
+    {
+      "name": "data-analyst",
+      "displayName": "Spreadsheet / CSV analyst",
+      "source": "./skills/data-analyst",
+      "description": "Analyzes a CSV or spreadsheet with code, checks data quality and reconciles totals, and answers with verified numbers, caveats and the findings that matter.",
+      "category": "research",
+      "keywords": [
+        "agent-skill",
+        "research"
+      ],
+      "homepage": "https://kuan-ai.com/skills/data-analyst",
+      "license": "MIT"
+    },
+    {
+      "name": "product-spec",
+      "displayName": "Product spec (PRD)",
+      "source": "./skills/product-spec",
+      "description": "Turns a feature idea into a one-page spec with problem, scope, acceptance criteria, edge cases and a measurable goal, marking every assumption.",
+      "category": "business",
+      "keywords": [
+        "agent-skill",
+        "business"
+      ],
+      "homepage": "https://kuan-ai.com/skills/product-spec",
+      "license": "MIT"
+    },
+    {
+      "name": "support-reply",
+      "displayName": "Customer support reply",
+      "source": "./skills/support-reply",
+      "description": "Drafts support replies that fix the issue within your policies, never claim actions not taken, and flag tickets that need a human or escalation.",
+      "category": "business",
+      "keywords": [
+        "agent-skill",
+        "business"
+      ],
+      "homepage": "https://kuan-ai.com/skills/support-reply",
+      "license": "MIT"
+    },
+    {
+      "name": "migration-safety",
+      "displayName": "Safe database migrations",
+      "source": "./skills/migration-safety",
+      "description": "Writes and reviews schema migrations that run without downtime: expand/contract steps, lock checks, batched backfills, deploy order and a rollback plan.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/migration-safety",
+      "license": "MIT"
+    },
+    {
+      "name": "ci-failure-fix",
+      "displayName": "Fix a failing CI build",
+      "source": "./skills/ci-failure-fix",
+      "description": "Diagnoses a red CI pipeline from the real logs, separates flaky tests from real failures, reproduces locally and fixes the cause without skipping checks.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/ci-failure-fix",
+      "license": "MIT"
+    },
+    {
+      "name": "dependency-upgrade",
+      "displayName": "Upgrade a dependency",
+      "source": "./skills/dependency-upgrade",
+      "description": "Upgrades a library or framework major version step by step: reads the changelog and migration guide, fixes removed APIs and keeps the tests green.",
+      "category": "coding",
+      "keywords": [
+        "agent-skill",
+        "coding"
+      ],
+      "homepage": "https://kuan-ai.com/skills/dependency-upgrade",
+      "license": "MIT"
+    },
+    {
+      "name": "incident-postmortem",
+      "displayName": "Incident postmortem",
+      "source": "./skills/incident-postmortem",
+      "description": "Turns incident logs, chat and notes into a blameless postmortem with a verified timeline, root cause, contributing factors and owned action items.",
+      "category": "business",
+      "keywords": [
+        "agent-skill",
+        "business"
+      ],
+      "homepage": "https://kuan-ai.com/skills/incident-postmortem",
+      "license": "MIT"
+    },
+    {
+      "name": "eval-prompt",
+      "displayName": "Evaluate a prompt or skill",
+      "source": "./skills/eval-prompt",
+      "description": "Builds a small test set with pass/fail criteria for a prompt, skill or agent, runs it before and after a change and reports what really improved.",
+      "category": "research",
+      "keywords": [
+        "agent-skill",
+        "research"
+      ],
+      "homepage": "https://kuan-ai.com/skills/eval-prompt",
+      "license": "MIT"
+    }
+  ]
+}

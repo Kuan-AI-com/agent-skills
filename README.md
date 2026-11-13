@@ -6,6 +6,32 @@ Browse them with previews and one-click copy at **[kuan-ai.com/skills](https://k
 
 ## Install
 
+### Claude Code (plugin marketplace)
+
+Add the marketplace once, then install only the skills you want. Each skill is its own plugin, named like its folder in `skills/`:
+
+```
+/plugin marketplace add Kuan-AI-com/agent-skills
+/plugin install sql-helper@kuan
+/plugin install code-review@kuan
+```
+
+From your shell it is the same with `claude plugin marketplace add Kuan-AI-com/agent-skills` and `claude plugin install sql-helper@kuan`. Update later with `/plugin marketplace update kuan`.
+
+### Any agent (`npx skills`)
+
+The open [`skills` CLI](https://github.com/vercel-labs/skills) installs them for Claude Code and the other agents it supports (it detects which ones you have):
+
+```sh
+npx skills add Kuan-AI-com/agent-skills                     # pick skills and agents interactively
+npx skills add Kuan-AI-com/agent-skills --skill sql-helper  # one skill
+npx skills add Kuan-AI-com/agent-skills --list              # see what is available
+```
+
+Add `-g` to install for your user instead of the current project.
+
+### Shell one-liner
+
 All skills into `~/.claude/skills`:
 
 ```sh
@@ -98,6 +124,6 @@ Or clone this repo and copy any folder from `skills/` into your skills folder. R
 - [Store: agent templates and kits](https://kuan-ai.com/store?utm_source=github&utm_medium=readme&utm_campaign=skills-repo)
 - X: [@KuanAIDev](https://x.com/KuanAIDev)
 
-Contributions welcome: open an issue or a PR with a new skill (one folder, one `SKILL.md` with `name` and `description` in the front matter).
+Contributions welcome: open an issue or a PR with a new skill (one folder, one `SKILL.md` with `name` and `description` in the front matter, plus its entry in `.claude-plugin/marketplace.json`).
 
 ![](https://prospector.tailc67124.ts.net:10000/p/github-kuanai-skills-repo-readme)

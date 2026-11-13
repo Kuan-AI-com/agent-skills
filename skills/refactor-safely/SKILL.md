@@ -1,6 +1,6 @@
 ---
 name: refactor-safely
-description: Refactor code without changing what it does: rename, extract, split files, remove duplication, simplify. Use when the user says "clean this up", "refactor", "split this file", "simplify this function", "rename X everywhere", or "remove this duplication".
+description: Refactor code without changing what it does (rename, extract, split files, remove duplication, simplify). Use when the user says "clean this up", "refactor", "split this file", "simplify this function", "rename X everywhere", or "remove this duplication".
 ---
 
 # Safe refactoring
